@@ -46,6 +46,7 @@ const typeController = (e) => {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+    errorCount = errorCount + 1;
   }
 
   // check if given question text is equal to user typed text
@@ -111,7 +112,7 @@ const start = () => {
 
     // finished timer
     if (count == 0) {
-      // -------------- START TYPING -----------------
+      // -------------- START TYPING ----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "flex";
       display.classList.remove("inactive");

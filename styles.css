@@ -93,6 +93,10 @@ body {
   font-weight: 700;
 }
 
+.center {
+  text-align: center;
+}
+
 .inactive {
   border: 2px solid white !important;
 }
@@ -151,7 +155,6 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-
 }
 
 .card {
@@ -196,6 +199,5 @@ button {
     display: grid;
     grid-template-columns: 1fr;
   }
-
 
 }
