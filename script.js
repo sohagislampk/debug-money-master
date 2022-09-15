@@ -101,6 +101,7 @@ const gameOver = () => {
 const closeModal = () => {
   modalBackground.classList.toggle("hidden");
   resultModal.classList.toggle("hidden");
+  location.reload();
 };
 
 const start = () => {
@@ -119,7 +120,7 @@ const start = () => {
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "flex";
       display.classList.remove("inactive");
-      countdownOverlay.style.display = "none";
+      setTimeout(() => countdownOverlay.style.display = "none", 1000);
       clearInterval(startCountdown);
       startTime = new Date().getTime();
     }
