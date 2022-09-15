@@ -14,17 +14,96 @@
 
 <body>
     <h1 class="title">Blogs</h1>
-    <h1 class="title">Difference Between Local Storage and Session Storage</h1>
-    <p class="green center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, laborum!</p>
-    <h1 class="title">Difference Between Global Scope and Block Scope</h1>
-    <p class="green center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, laborum! Lorem ipsum
-        dolor sit
-        amet consectetur adipisicing elit. Eum, maiores?</p>
+    <section class="blog-container">
+        <h1 class="title">Difference Between Local Storage and Session Storage</h1>
+        <p class="white">localStorage and sessionStorage are relatively new APIs and are near identical with the
+            sole
+            exception of persistence. sessionStorage is only available for the duration of the browser session and on
+            the
+            other hand local storage stored data.</p>
+        <p class="white">localStorage and sessionStorage are perfect for persisting non-sensitive data needed
+            within
+            client scripts between pages. The data stored in localStorage and sessionStorage can easily be read or
+            changed
+            from within the client/browser so should not be relied upon for storage of sensitive or security-related
+            data
+            within applications.
+        </p>
 
-    <h1 class="title">How Java Scripts Event loop Works?</h1>
-    <p class="green center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, laborum!</p>
-    <h1 class="title">How many ways can we get Undefined in Javascript</h1>
-    <p class="green center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, laborum!</p>
+        <ul class="white">
+            <h3>Local storage has 4 methods:</h3>
+            <li>setItem() Method – This method takes two parameters one is key and another one is value. It is used to
+                store the value in a particular location with the name of the key. <br>
+                localStorage.setItem(key, value)</li>
+            <li>getItem() Method – This method takes one parameter that is key which is used to get the value stored
+                with a particular key name. <br>
+                localStorage.getItem(key)
+            </li>
+            <li> localStorage.getItem(key)
+                removeItem() Method – This is method is used to remove the value stored in the memory in reference to
+                key. <br> localStorage.removeItem(key)
+            </li>
+            <li>localStorage.removeItem(key)
+                clear() Method – This method is used to clear all the values stored in localstorage. <br>
+                localStorage.clear()</li>
+        </ul>
+        <ul class="white">
+            <h3>Session Storage has 4 methods:</h3>
+            <li>ssetItem() Method – This method takes two parameters one is key and another one is value. It is used to
+                store the value in a particular location with the name of the key. <br>
+                localStorage.setItem(key, value)</li>
+            <li>getIteam() Method – This method takes one parameter that is key which is used to get the value stored
+                with a particular key name. <br>
+                sessionStorage.getItem(key)
+            </li>
+            <li> removeItem() Method – This is method is used to remove the value stored in the memory in reference to
+                key. <br> sessionStorage.removeItem(key)
+            </li>
+            <li>clear() Method – This method is used to clear all the values stored in the session storage <br>
+                sessionStorage.clear()</li>
+        </ul>
+
+    </section>
+    <section class="blog-container">
+        <h1 class="title">Difference Between Global Scope and Block Scope</h1>
+        <p class="white ">The scope of a variable is the region of your program in which it is defined. JavaScript
+            variables have only two scopes.
+            <br>
+            Global Variables − A global variable has a global scope which means it can be defined anywhere in your
+            JavaScript code.
+            <br>
+            Local Variables − A local variable will be visible only within a function where it is defined. Function
+            parameters are always local to that function.
+            <br>
+            Within the body of a function, a local variable takes precedence over a global variable with the same name.
+            If
+            you declare a local variable or function parameter with the same name as a global variable, you effectively
+            hide
+            the global variable.
+        </p>
+    </section>
+    <section class="blog-container">
+
+        <h1 class="title">How Java Scripts Event loop Works?</h1>
+        <p class="white ">The event loop is a process that waits for the Call Stack to be clear before pushing
+            callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks
+            the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call
+            Stack to be clear again, and repeats the same process.</p>
+    </section>
+    <section class="blog-container">
+
+
+        <h1 class="title">How many ways can we get Undefined in Javascript</h1>
+        <p class="white">undefined is a property of the global object. That is, it is a variable in global scope.
+            The initial value of undefined is the primitive value undefined.
+
+            In all non-legacy browsers, undefined is a non-configurable, non-writable property. (Even when this is not
+            the case, avoid overriding it.)
+
+            A variable that has not been assigned a value is of type undefined. A method or statement also returns
+            undefined if the variable that is being evaluated does not have an assigned value. A function returns
+            undefined if a value was not returned.</p>
+    </section>
 
 
     <script src="./history.js"></script>
